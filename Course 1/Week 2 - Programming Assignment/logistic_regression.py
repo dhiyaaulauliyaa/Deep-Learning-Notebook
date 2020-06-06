@@ -72,7 +72,7 @@ print("")
 
 # Pada step ini dilakukan pembuatan fungsi-fungsi pendukung dalam pembuatan model 
 # Logistic Regression. Mari review step-step utama algoritma Logistic Regression:
-#   1. Menghitung nilai Z
+#   1. Menghitung nilai Z --> Z merupakan linear function yg ada di setiap neuron
 #   2. Melakukan aktivasi Z dengan sigmoid => agar datanya standar dari -1 sampai 1
 #   3. Meghitung loss function => mendapatkan nilai probabilitas
 #   4. Memperbaiki nilai probabilitas dengan Gradient Descent (Backward Propagation)
@@ -329,4 +329,4 @@ def model(X_train, Y_train, X_test, Y_test, num_iterations = 2000, learning_rate
 
 
 # ------------------------- STEP 5: MELAKUKAN PROSES LOGISTIC REGRESSION BERDASARKAN MODEL YANG TELAH DIBUAT ------------------------- #
-d = model(train_set_x, train_set_y, test_set_x, test_set_y, num_iterations = 20000, learning_rate = 0.005, print_cost = True)
+d = model(train_set_x, train_set_y, test_set_x, test_set_y, num_iterations = 200000, learning_rate = 0.05, print_cost = True)
